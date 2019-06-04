@@ -1,0 +1,66 @@
+.container {
+    margin-top: 20px;
+}
+
+#facebook {
+    color: #ffc107;
+    font-size: 20px;
+}
+#facebook :hover {
+    transition: all 0.25s ease-in-out;
+    color: #385898;
+}
+
+#instagram {
+    color: #ffc107;
+    font-size: 20px;
+}
+#instagram :hover {
+    transition: all 0.25s ease-in-out;
+    color: red;
+}
+
+#linkedin {
+    color: #ffc107;
+    font-size: 20px;
+}
+#linkedin :hover {
+    transition: all 0.25s ease-in-out;
+    color: #0077b5;
+}
+
+tr,
+td {
+    text-align: center;
+}
+
+.btn:hover {
+    transition: all 0.25s ease-in-out;
+}
+
+.btn:focus {
+    background-image: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+body {
+    background-color: #feffff;
+}
+
+.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control:focus {
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 5px #ffc107;
+    /* padding: 3px 0px 3px 3px; */
+    /* margin: 5px 1px 3px 0px; */
+    border: 1px solid #ffc107;
+}
+
+.form-control {
+    border-width: 0px;
+    border-bottom-width: 0.5px;
+}

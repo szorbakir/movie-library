@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!--Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <!--Custom stylesheet-->
+        <link rel="stylesheet" href="style.css" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Movie Library</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 style="margin-top: 5px">
+                        <i class="fas fa-film"></i> Movie
+                        <span style="color: #FFC107">Library</span>
+                    </h5>
+                </div>
+                <div class="col text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a
+                                id="facebook"
+                                target="_blank"
+                                href="https://www.facebook.com/szorbakir"
+                                ><i class="fab fa-facebook-f"> </i
+                            ></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                id="instagram"
+                                target="_blank"
+                                href="https://www.instagram.com/szorbakir/"
+                                ><i class="fab fa-instagram"> </i
+                            ></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                id="linkedin"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/ibrahim-soner-zorbak%C4%B1r-78215793/"
+                                ><i class="fab fa-linkedin-in"> </i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div id="inputContainer" class="container">
+            <div class="row justify-content-around flex-wrap">
+                <div class="d-sm-flex w-25 mb-1 mr-sm-1">
+                    <input
+                        type="text"
+                        class="form-control "
+                        id="movieName"
+                        aria-describedby="movieName"
+                        placeholder="Enter Movie Name"
+                    />
+                </div>
+                <div class="d-sm-flex w-25 mb-1 mr-sm-1">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="movieYear"
+                        aria-describedby="movieName"
+                        placeholder="Enter Year"
+                        required
+                    />
+                </div>
+                <div class="d-sm-flex w-25  mb-1 mr-sm-1">
+                    <select class="form-control" id="movieRating" placeholder="Rating">
+                        <option selected>Choose rating...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="d-sm-flex w-24 mb-1 mr-sm-1">
+                    <button type="submit" id="addButton" class="btn btn-outline-warning">
+                        Add Movie
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="tableContainer" class="container">
+            <table id="movieTable" class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Movie Name</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="movieList"></tbody>
+            </table>
+            <div id="info" class="alert alert-warning" role="alert">
+                No Movie added!
+            </div>
+            <hr />
+        </div>
+        <div class="container">
+            <button id="clearMovies" type="submit" class="btn btn-outline-dark">
+                Clear all Movies
+            </button>
+        </div>
+        <!-- Bootstrap scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!--Javascript files-->
+        <script src="movie.js"></script>
+        <script src="userInterface.js"></script>
+        <script src="localStorage.js"></script>
+        <script src="project.js"></script>
+    </body>
+</html>
