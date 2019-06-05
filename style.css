@@ -64,3 +64,8 @@ body {
     border-width: 0px;
     border-bottom-width: 0.5px;
 }
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
